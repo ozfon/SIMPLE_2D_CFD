@@ -520,7 +520,6 @@ plt.colorbar()
 plt.xlabel('Length (m)')
 plt.ylabel('Height (m)')
 plt.title('Pressure Plot')
-plt.show()
 
 plt.figure(2)#u velocity contour plot
 plt.contourf(xu,yu,u_new)
@@ -528,7 +527,6 @@ plt.colorbar()
 plt.xlabel('Length (m)')
 plt.ylabel('Height (m)')
 plt.title('U Velocity Plot')
-plt.show()
 
 plt.figure(3)#v velocity contour plot
 plt.contourf(xv,yv,v_new)
@@ -536,28 +534,24 @@ plt.colorbar()
 plt.xlabel('Length (m)')
 plt.ylabel('Height (m)')
 plt.title('V Velocity Plot')
-plt.show()
 
 plt.figure(4)#Midline pressure plot
 plt.plot(xp,p_new[int(Np[0]/2),:])
 plt.xlabel('Length (m)')
 plt.ylabel('Pressure (Pa)')
 plt.title('Midline Pressure Plot')
-plt.show()
 
 plt.figure(5)#Bottom wall shear stress
 plt.plot(xu,tau)
 plt.xlabel('Length (m)')
 plt.ylabel('$\\tau$ - Shear Stress (Pa)')
 plt.title('Wall Shear Stress')
-plt.show()
 
 plt.figure(6)#Outlet velocity profile
 plt.plot(yu,u_outlet)
 plt.xlabel('Height (m)')
 plt.ylabel('U Velocity (m/s)')
 plt.title('Outlet velocity profile')
-plt.show()
 
 plt.figure(7)#Midline U velocity plot
 plt.plot(xu,u_new[int(Np[0]/2),:])
